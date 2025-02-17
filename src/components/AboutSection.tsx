@@ -30,12 +30,13 @@ const AboutSection = ({
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="relative h-[400px] rounded-lg overflow-hidden">
+            className="relative h-[400px] rounded-lg overflow-hidden"
+          >
             <img
               src={farmImage}
               alt="Our Farm"
@@ -85,12 +86,13 @@ const AboutSection = ({
             </CardContent>
           </Card>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="relative h-[400px] rounded-lg overflow-hidden order-1 md:order-2">
+            className="relative h-[400px] rounded-lg overflow-hidden order-1 md:order-2"
+          >
             <img
               src={sustainabilityImage}
               alt="Sustainable Practices"
