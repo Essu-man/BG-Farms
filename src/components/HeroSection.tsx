@@ -11,8 +11,8 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({
-  title = "Welcome to BlengLen Poultry Farm",
-  subtitle = "Experience the finest free-range, organic poultry raised with care and tradition since 1985",
+  title = "Farm Fresh Eggs Daily",
+  subtitle = "Experience the finest free-range, organic eggs from our happy hens, delivered fresh to your table",
   backgroundImage = "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1200&auto=format&fit=crop&q=80",
   ctaText = "Explore Our Products",
   onCtaClick = () => console.log("CTA clicked"),

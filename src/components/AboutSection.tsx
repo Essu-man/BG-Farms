@@ -11,13 +11,13 @@ interface AboutSectionProps {
 }
 
 const AboutSection = ({
-  farmStory = "BlengLen Poultry Farm has been a family-owned operation since 1985. Our commitment to quality and sustainable farming practices has made us a trusted name in the community. We believe in raising our poultry with care, giving them the space and natural environment they need to thrive.",
+  farmStory = "Our family farm has been producing the highest quality eggs since 1985. We believe happy hens lay the best eggs, which is why our chickens roam freely on green pastures, enjoying natural sunlight and fresh air. Our commitment to ethical farming and sustainable practices ensures you get the freshest, most nutritious eggs possible.",
   sustainabilityPractices = [
-    "100% Free-range farming",
-    "Organic feed production",
-    "Solar-powered facilities",
-    "Water conservation systems",
-    "Waste composting program",
+    "Free-range hen housing",
+    "Organic feed for our hens",
+    "Daily fresh egg collection",
+    "Natural pest control",
+    "Zero-waste egg packaging",
   ],
   farmImage = "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&auto=format&fit=crop&q=60",
   sustainabilityImage = "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&auto=format&fit=crop&q=60",

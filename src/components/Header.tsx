@@ -13,10 +13,10 @@ interface HeaderProps {
 }
 
 const Header = ({
-  logo = "BlengLen Farm",
+  logo = "Farm Fresh Eggs",
   menuItems = [
-    { label: "Products", href: "#products" },
-    { label: "About", href: "#about" },
+    { label: "Our Eggs", href: "#products" },
+    { label: "About Us", href: "#about" },
     { label: "Contact", href: "#contact" },
   ],
 }: HeaderProps) => {
@@ -39,8 +39,8 @@ const Header = ({
           className="text-2xl font-bold text-orange-600 flex items-center gap-2"
         >
           <img
-            src="https://api.dicebear.com/7.x/icons/svg?seed=chicken"
-            alt="logo"
+            src="https://api.dicebear.com/7.x/icons/svg?seed=egg"
+            alt="Egg logo"
             className="w-8 h-8"
           />
           {logo}
@@ -81,7 +81,7 @@ const Header = ({
             transition={{ delay: 0.4 }}
           >
             <Button className="bg-orange-600 hover:bg-orange-700 ml-4">
-              Order Now
+              Order Eggs
             </Button>
           </motion.div>
         </div>

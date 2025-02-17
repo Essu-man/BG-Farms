@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ProductCard from "./ProductCard";
-import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import {
   Select,
@@ -29,44 +28,69 @@ const ProductGrid = ({
   products = [
     {
       id: 1,
-      title: "Premium Whole Chicken",
-      price: 12.99,
+      title: "Premium Organic Eggs",
+      price: 6.99,
       image:
-        "https://images.unsplash.com/photo-1587486913049-53fc88980cfc?w=500&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=500&auto=format&fit=crop&q=60",
       description:
-        "Farm-fresh, free-range whole chicken, perfect for roasting.",
+        "Farm-fresh organic eggs from our free-range hens. Rich in nutrients and flavor.",
       inStock: true,
-      category: "Whole Chicken",
+      category: "Organic",
     },
     {
       id: 2,
-      title: "Chicken Breast",
-      price: 8.99,
+      title: "Large Brown Eggs",
+      price: 5.99,
       image:
-        "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=500&auto=format&fit=crop&q=60",
-      description: "Lean, boneless chicken breast from free-range chickens.",
+        "https://images.unsplash.com/photo-1569288052389-dac9b0ac9eeb?w=500&auto=format&fit=crop&q=60",
+      description:
+        "Fresh, large brown eggs from pasture-raised hens. Perfect for everyday use.",
       inStock: true,
-      category: "Cuts",
+      category: "Standard",
     },
     {
       id: 3,
-      title: "Chicken Thighs",
-      price: 7.99,
+      title: "Duck Eggs",
+      price: 8.99,
       image:
-        "https://images.unsplash.com/photo-1620574387735-3624d75b2dbc?w=500&auto=format&fit=crop&q=60",
-      description: "Juicy, bone-in chicken thighs, perfect for grilling.",
+        "https://images.unsplash.com/photo-1598965675045-45c5e72c7d05?w=500&auto=format&fit=crop&q=60",
+      description:
+        "Rich and creamy duck eggs, perfect for baking and gourmet dishes.",
       inStock: true,
-      category: "Cuts",
+      category: "Specialty",
     },
     {
       id: 4,
-      title: "Organic Eggs",
-      price: 5.99,
+      title: "Quail Eggs",
+      price: 7.99,
       image:
-        "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=500&auto=format&fit=crop&q=60",
-      description: "Farm-fresh organic eggs from our free-range chickens.",
+        "https://images.unsplash.com/photo-1551887373-3c5bd224f0e3?w=500&auto=format&fit=crop&q=60",
+      description:
+        "Small, delicate quail eggs. Ideal for appetizers and garnishes.",
       inStock: true,
-      category: "Eggs",
+      category: "Specialty",
+    },
+    {
+      id: 5,
+      title: "Medium Eggs Value Pack",
+      price: 4.99,
+      image:
+        "https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=500&auto=format&fit=crop&q=60",
+      description:
+        "Great value pack of medium-sized eggs. Perfect for families.",
+      inStock: true,
+      category: "Standard",
+    },
+    {
+      id: 6,
+      title: "Jumbo Organic Eggs",
+      price: 7.99,
+      image:
+        "https://images.unsplash.com/photo-1592005285852-4292e211c6e9?w=500&auto=format&fit=crop&q=60",
+      description:
+        "Extra-large organic eggs from our best-fed hens. A breakfast favorite!",
+      inStock: true,
+      category: "Organic",
     },
   ],
   onOrderClick = (productId: number) =>
@@ -95,7 +119,7 @@ const ProductGrid = ({
       <div className="flex flex-col md:flex-row gap-4 mb-8">
         <Input
           type="text"
-          placeholder="Search products..."
+          placeholder="Search eggs..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="md:w-64"
