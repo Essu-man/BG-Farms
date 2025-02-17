@@ -23,7 +23,7 @@ const ProductCard = ({
 }: ProductCardProps) => {
   return (
     <motion.div
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ scale: 1.02, y: -5 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
       <Card className="w-[280px] h-[380px] bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">

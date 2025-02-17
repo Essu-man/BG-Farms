@@ -4,6 +4,8 @@ import HeroSection from "./HeroSection";
 import ProductGrid from "./ProductGrid";
 import AboutSection from "./AboutSection";
 import ContactSection from "./ContactSection";
+import StatsBanner from "./StatsBanner";
+import TestimonialSection from "./TestimonialSection";
 
 interface HomeProps {
   onProductOrder?: (productId: number) => void;
@@ -29,6 +31,7 @@ const Home = ({
             productsSection?.scrollIntoView({ behavior: "smooth" });
           }}
         />
+        <StatsBanner />
         <section id="products" className="py-16">
           <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
             Our Products
@@ -38,6 +41,7 @@ const Home = ({
         <section id="about">
           <AboutSection />
         </section>
+        <TestimonialSection />
         <section id="contact">
           <ContactSection onSubmit={onContactSubmit} />
         </section>
